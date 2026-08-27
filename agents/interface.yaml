@@ -1,0 +1,46 @@
+interface:
+  display_name: "SYC 散文风格写作"
+  short_description: "模拟孙宇晨克制散文风格：数字锚点、冰山叙事、哲学收束句"
+  default_prompt: "用SYC风格写一段关于等待的散文"
+
+compatibility:
+  adapter_targets:
+    - claude
+    - openai
+    - generic
+    - agent-skills-compatible
+
+name: qiaomu-syc
+version: 1.0.0
+description: >
+  模拟孙宇晨（SYC）散文体写作风格：极度克制的短句节奏、数字锚点密集、情绪从不直接说破、
+  哲学式收束句、冰山叙事法。用于生成、改写或润色中文散文、情感叙事、个人陈述类文章。
+inputs:
+  - name: topic
+    description: 写作主题或场景描述
+    required: true
+  - name: source_text
+    description: 需要改写的原始文本（可选）
+    required: false
+  - name: length
+    description: 目标字数（默认500-1000字）
+    required: false
+outputs:
+  - name: prose
+    description: SYC风格散文文本
+  - name: style_notes
+    description: 使用的风格技法说明
+triggers:
+  - "SYC风格"
+  - "孙宇晨文风"
+  - "克制散文"
+  - "冰山叙事"
+  - "数字锚点散文"
+  - "qiaomu-syc"
+  - "用SYC风格写"
+  - "像孙宇晨那样写"
+excludes:
+  - 新闻报道
+  - 技术文档
+  - 营销文案
+  - 学术论文

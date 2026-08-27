@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "skill": "qiaomu-syc",
+  "should_trigger": [
+    {
+      "id": "trigger-01",
+      "input": "用SYC风格写一段关于等待的散文",
+      "notes": "明确触发词"
+    },
+    {
+      "id": "trigger-02",
+      "input": "孙宇晨文风写一篇分手的故事",
+      "notes": "人名触发"
+    },
+    {
+      "id": "trigger-03",
+      "input": "用克制散文风格改写这段文字",
+      "notes": "风格描述触发"
+    },
+    {
+      "id": "trigger-04",
+      "input": "冰山叙事，写一个男人在医院等消息",
+      "notes": "技法触发"
+    },
+    {
+      "id": "trigger-05",
+      "input": "qiaomu-syc 写一段关于钱的故事",
+      "notes": "skill名触发"
+    },
+    {
+      "id": "trigger-06",
+      "input": "像孙宇晨那样写一段散文",
+      "notes": "相似表达触发"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "id": "no-trigger-01",
+      "input": "帮我写一篇产品发布新闻稿",
+      "notes": "营销文案，不触发"
+    },
+    {
+      "id": "no-trigger-02",
+      "input": "写一篇学术论文摘要",
+      "notes": "学术文档，不触发"
+    },
+    {
+      "id": "no-trigger-03",
+      "input": "帮我写一份技术文档",
+      "notes": "技术文档，不触发"
+    }
+  ],
+  "near_neighbor": [
+    {
+      "id": "near-01",
+      "input": "写一段有文学感的中文散文",
+      "should_trigger": false,
+      "notes": "通用散文请求，不特指SYC风格，不触发"
+    },
+    {
+      "id": "near-02",
+      "input": "帮我写一段克制的文字",
+      "should_trigger": false,
+      "notes": "克制但未指定SYC风格，不触发"
+    }
+  ]
+}

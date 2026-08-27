@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0.0-qiaomu-lite",
+  "generated_at": "2026-08-27",
+  "package": {
+    "name": "qiaomu-syc",
+    "version": "1.0.0",
+    "owner": "向阳乔木",
+    "maturity_tier": "production",
+    "lifecycle_stage": null,
+    "upstream_inspiration": null,
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "模拟孙宇晨（SYC）散文体写作风格：极度克制的短句节奏、数字锚点密集、情绪从不直接说破、 哲学式收束句、冰山叙事法。用于生成、改写或润色中文散文、情感叙事、个人陈述类文章。 触发词：SYC风格、孙宇晨文风、克制散文、冰山叙事、数字锚点散文、qiaomu-syc。\n",
+    "job_to_be_done": "模拟孙宇晨（SYC）散文体写作风格：极度克制的短句节奏、数字锚点密集、情绪从不直接说破、 哲学式收束句、冰山叙事法。用于生成、改写或润色中文散文、情感叙事、个人陈述类文章。 触发词：SYC风格、孙宇晨文风、克制散文、冰山叙事、数字锚点散文、qiaomu-syc。\n",
+    "target_users": [
+      "Qiaomu operator"
+    ],
+    "inputs": [],
+    "outputs": [],
+    "exclusions": [],
+    "qiaomu_defaults": {}
+  },
+  "triggers": {
+    "should_trigger": [],
+    "should_not_trigger": [],
+    "near_neighbor": []
+  },
+  "workflow": {
+    "router_rules": [],
+    "compact_workflow": [],
+    "gate_ladder": [],
+    "output_contract": []
+  },
+  "resources": {
+    "references": [
+      "references/style-dna.md"
+    ],
+    "scripts": [],
+    "evals": [
+      "evals/trigger_cases.json"
+    ],
+    "reports": [
+      "reports/creation-handoff.md",
+      "reports/prior-art-research.md",
+      "reports/trigger-eval.json"
+    ]
+  },
+  "portability": {
+    "canonical_format": null,
+    "adapter_targets": [
+      "claude",
+      "openai",
+      "generic",
+      "agent-skills-compatible"
+    ],
+    "activation": {},
+    "execution": {},
+    "trust": {},
+    "permissions": {},
+    "degradation": {}
+  },
+  "gates": {},
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  }
+}

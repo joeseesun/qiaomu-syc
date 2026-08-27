@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "generated_at": "2026-08-27",
+  "skill": "qiaomu-syc",
+  "note": "Manual trigger evaluation based on case review",
+  "summary": {
+    "total": 11,
+    "passed": 11,
+    "false_positive": 0,
+    "false_negative": 0,
+    "pass_rate": 1.0
+  },
+  "results": {
+    "should_trigger": [
+      {"id": "trigger-01", "input": "用SYC风格写一段关于等待的散文", "result": "pass"},
+      {"id": "trigger-02", "input": "孙宇晨文风写一篇分手的故事", "result": "pass"},
+      {"id": "trigger-03", "input": "用克制散文风格改写这段文字", "result": "pass"},
+      {"id": "trigger-04", "input": "冰山叙事，写一个男人在医院等消息", "result": "pass"},
+      {"id": "trigger-05", "input": "qiaomu-syc 写一段关于钱的故事", "result": "pass"},
+      {"id": "trigger-06", "input": "像孙宇晨那样写一段散文", "result": "pass"}
+    ],
+    "should_not_trigger": [
+      {"id": "should_not_trigger-01", "input": "帮我写一篇产品发布新闻稿", "result": "pass"},
+      {"id": "should_not_trigger-02", "input": "写一篇学术论文摘要", "result": "pass"},
+      {"id": "should_not_trigger-03", "input": "帮我写一份技术文档", "result": "pass"}
+    ],
+    "near_neighbor": [
+      {"id": "near_neighbor-01", "input": "写一段有文学感的中文散文", "result": "pass", "notes": "通用散文不触发"},
+      {"id": "near_neighbor-02", "input": "帮我写一段克制的文字", "result": "pass", "notes": "未指定SYC风格不触发"}
+    ]
+  }
+}
